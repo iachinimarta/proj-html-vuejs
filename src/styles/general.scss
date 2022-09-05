@@ -1,1 +1,15 @@
 @import '~bootstrap/scss/bootstrap.scss';
+
+$brand-color: #6FC2D2;
+
+.bg_brandColor {
+    background-color: $brand-color;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
