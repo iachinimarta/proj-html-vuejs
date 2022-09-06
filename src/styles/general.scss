@@ -1,7 +1,5 @@
-@import '~@fontsource/montserrat/index.css';
-@import '~@fontsource/montserrat/500.css';
-@import '~@fontsource/montserrat/700.css';
 @import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~@fontsource/fira-sans/index.css';
 
 $brand-color-blue: #6FC2D2;
 $brand-color-black: black;
@@ -14,8 +12,8 @@ $brand-color-orange: #fc8c5e;
     box-sizing: border-box;
 }
 
-html {
-    font-family: montserrat;
+body {
+    font-family: "Fira Sans", sans-serif;
 }
 
 .bg_brandColor {
