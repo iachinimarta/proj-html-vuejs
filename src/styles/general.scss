@@ -1,7 +1,7 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import '~@fontsource/fira-sans/index.css';
 
-$brand-color-blue: #6FC2D2;
+$brand-color-blue: #27aabe;
 $brand-color-black: black;
 $brand-color-beige: rgb(247, 247, 237);
 $brand-color-orange: #fc8c5e;
@@ -22,7 +22,7 @@ body {
 
 li {
     list-style: none;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 a {
@@ -44,7 +44,7 @@ a {
     font-weight: bold;
     color: white;
     border-radius: 3px;
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 .btn_1 {
@@ -82,6 +82,9 @@ hr {
     background-size: cover;
     background-position: center;
     color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }
 
 .black_section {
@@ -97,4 +100,28 @@ hr {
     height: 200px;
     justify-content: center;
     align-items: center;
+}
+
+.mb_10 {
+    margin-bottom: 10px;
+}
+
+.mb_20 {
+    margin-bottom: 20px;
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
+.m_20 {
+    margin: 20px;
+}
+
+.mr_20 {
+    margin-right: 20px;
+}
+
+.date {
+    font-size: 11px;
 }

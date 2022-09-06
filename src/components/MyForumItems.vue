@@ -2,7 +2,7 @@
   <div class="d_flex w_80 item_wrapper">
     <div class="item d_flex" v-for="(item, index) in shareData" :key="index">
         <a :href="item.link">
-            <i class="item_icon fa-2x" :class="item.icon"></i>
+            <i class="item_icon fa-2x mb_10" :class="item.icon"></i>
             <p class="item_text">{{item.title}}</p>  
         </a>  
     </div>

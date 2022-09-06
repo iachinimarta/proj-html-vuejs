@@ -6,7 +6,7 @@
     <div class="jumbotron d_flex">
       <div class="jumbotron_text">
         <h1>Tech Forum!</h1>
-        <p>Discuss all the latest technology news and trends</p>
+        <p class="mb_20">Discuss all the latest technology news and trends</p>
         <button class="btn btn_2">
           <a href="#">GET AVADA NOW! <i class="fa-solid fa-angle-right"></i></a>
         </button>
@@ -16,33 +16,36 @@
     <!-- SEZIONE PLACE TO BE -->
     <div class="bg_beige beige_section d_flex">
       <div class="place_to_be_text w_80 t_center">
-        <h5>AVADA FORUM IS THE PLACE TO BE</h5>
+        <h5 class="mb_20">AVADA FORUM IS THE PLACE TO BE</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam debitis hic. Cumque facere sed veritatis ea inventore, et minima eum neque atque repellendus asperiores voluptatibus corrupti aut dolor quisquam sint, nihil deleniti delectus maiores magnam qui perferendis voluptate quaerat eos. Aspernatur ipsam rerum possimus eligendi tempore ducimus rem explicabo.</p>  
       </div>
     </div>
 
     <!-- SEZIONE ALL THE LATEST NEWS -->
 
-    <div class="t_center">
-      <h5>PHASELLUS EGET METUS</h5>
-      <h2>All the latest news</h2>
+    <div class="t_center mt_20">
+      <h5 class="mb_20">PHASELLUS EGET METUS</h5>
+      <h2 class="mb_20">All the latest news</h2>
       
-      <hr>
+      <hr class="mb_20">
     </div>
 
-    <div class="w_80 ">
+    <div class="w_80 mt_20">
 
       <!-- 3 IMGS -->
       <MyNewsItems :shareData="newsData_1"/>
 
       <!-- SEZIONE FEATURED ARTICLES -->
-      <div class="article featured_article">
-        <h5>FEATURED ARTICLE</h5>
-        <h1>Cras malesuada et orci eget pharetra</h1>
-        <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
-        <button class="btn btn_1">
-          <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
-        </button>
+      <div class="article featured_article d_flex">
+        <div class="featured_container">
+          <h5 class="mb_20">FEATURED ARTICLE</h5>
+          <h1 class="mb_20">Cras malesuada et orci eget pharetra</h1>
+          <p class="mb_20">In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
+          <button class="btn btn_1">
+            <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
+          </button>
+        </div>
+        
       </div>
 
       <!-- 3 IMGS -->
@@ -50,19 +53,24 @@
 
       <!-- SEZIONE REVIEWED PRODUCT -->
       <div class="sided_section d_flex">
-        <div class="article reviewd_product">
-          <h5>FEATURED ARTICLE</h5>
-          <h1>Cras malesuada et orci eget pharetra</h1>
-          <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
-          <button class="btn btn_1">
-            <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
-          </button>
+        <div class="article reviewd_product d_flex">
+          <div>
+            <h5 class="mb_20">REVIEWED PRODUCT</h5>
+            <h1 class="mb_20">Cras malesuada et orci eget pharetra</h1>
+            <p class="mb_20">In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
+            <button class="btn btn_1">
+              <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
+            </button>
+          </div>
+          
         </div>
         
         <!-- SEZIONE TUTORIALS & GUIDES -->
         <div class="tutorials">
-          <h4>Tutorials &amp; Guides</h4>
+          <h4 class="mb_20">Tutorials &amp; Guides</h4>
           <hr>
+
+          <MyTutorialLinks :shareData="tutorialsLinks"/>
 
         </div>
       </div>
@@ -76,10 +84,10 @@
     <!-- SEZIONE FORUM SECTIONS -->
     <div class="forum_sections bg_beige">
       <div class="t_center">
-        <h5>PHASELLUS EGET METUS</h5>
-        <h2>Forum Sections</h2>
+        <h5 class="mb_20">PHASELLUS EGET METUS</h5>
+        <h2 class="mb_20">Forum Sections</h2>
         
-        <hr>
+        <hr class="mb_20">
 
         <MyForumItems :shareData="forumSections"/>
       </div>
@@ -93,8 +101,8 @@
     <!-- SEZIONE JOIN OUR COMMUNITY -->
     <div class="our_community article d_flex">
       <div class="our_community_text t_center">
-        <h1>Hey! Join to our Community</h1>
-        <p>Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vuluptate purus ipsums dolores ficilis uns etra.</p>
+        <h1 class="mb_20">Hey! Join to our Community</h1>
+        <p class="mb_20">Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vuluptate purus ipsums dolores ficilis uns etra.</p>
         <button class="btn btn_2">
           <a href="#">SIGN UP <i class="fa-solid fa-angle-right"></i></a>
         </button>
@@ -104,7 +112,7 @@
     <!-- SEZIONE SUBSCRIBE -->
     <div class="bg_beige beige_section d_flex">
       <div class="t_center w_80">
-        <h3>Subscribe to our Newsletter</h3>
+        <h3 class="mb_20">Subscribe to our Newsletter</h3>
         <input type="email" placeholder="Insert your email*" class="subscribe_input">
         <button class="btn btn_1">SEND</button>
       </div>
@@ -116,12 +124,14 @@
 <script>
 import MyNewsItems from '../components/MyNewsItems.vue';
 import MyForumItems from '../components/MyForumItems.vue';
+import MyTutorialLinks from '../components/MyTutorialLinks.vue';
 
   export default {
       name: 'MyMain',
       components: {
         MyNewsItems,
-        MyForumItems
+        MyForumItems,
+        MyTutorialLinks
       },
       data() {
         return {
@@ -224,6 +234,32 @@ import MyForumItems from '../components/MyForumItems.vue';
               link: '#',
               icon: 'fa-solid fa-wrench'
             }
+          ],
+          tutorialsLinks: [
+            {
+              src: require('../assets/post_feat_img_23-177x142.jpg'),
+              title: 'Donec ornare pretium eget scelisque justo',
+              link: '#',
+              date: 'October 11th, 2015',
+              active: false,
+              alt: 'smartwatch'
+            },
+            {
+              src: require('../assets/post_feat_img_22-177x142.jpg'),
+              title: 'Fusce sollicitudin nunc sed placerat varius',
+              link: '#',
+              date: 'October 11th, 2015',
+              active: false,
+              alt: 'tablet'
+            },
+            {
+              src: require('../assets/post_feat_img_20-177x142.jpg'),
+              title: 'Proin eu purus sed aru aliquet curabir vens',
+              link: '#',
+              date: 'October 11th, 2015',
+              active: false,
+              alt: 'laptop'
+            }
           ]
         }
       }
@@ -255,15 +291,22 @@ import MyForumItems from '../components/MyForumItems.vue';
 
     .featured_article {
       background-image: url('../assets/featured_article_1_bg.jpg');
+      margin: 50px 0;
     }
 
     .reviewd_product {
       background-image: url('../assets/featured_article_2_bg.jpg');
       width: 70%;
+      margin: 40px 0 80px 0;
+    }
+
+    .tutorials {
+      margin: 40px 0 80px 30px;
     }
 
     .forum_sections {
-      height: 500px;
+      height: 600px;
+      padding-top: 40px;
     }
 
     .our_community {

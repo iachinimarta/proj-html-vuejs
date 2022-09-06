@@ -69,7 +69,7 @@
 
   header {
     width: 100%;
-    height: 100px;
+    height: 90px;
     position: fixed;
     top: 0;
     left: 0;
@@ -83,6 +83,14 @@
 
       .header_links {
         align-items: center;
+
+        ul {
+          margin-right: 10px;
+        }
+
+        .fa-magnifying-glass {
+          margin-left: 20px;
+        }
       }
 
       .header_logo {
