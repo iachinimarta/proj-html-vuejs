@@ -69,12 +69,12 @@
     </div>
 
     <!-- SEZIONE READ OUR BLOG -->
-    <div class="our_blog t_center">
+    <div class="black_section d_flex">
       <a href="#">READ OUR BLOG <i class="fa-solid fa-right-long"></i></a>
     </div>
 
     <!-- SEZIONE FORUM SECTIONS -->
-    <div class="bg_beige">
+    <div class="forum_sections bg_beige">
       <div class="t_center">
         <h5>PHASELLUS EGET METUS</h5>
         <h2>Forum Sections</h2>
@@ -84,7 +84,22 @@
         <MyForumItems :shareData="forumSections"/>
       </div>
     </div>
-    
+
+    <!-- SEZIONE OUR FORUM -->
+    <div class="black_section d_flex">
+      <a href="#">GO TO OUR FORUM <i class="fa-solid fa-right-long"></i></a>
+    </div>
+
+    <!-- SEZIONE JOIN OUR COMMUNITY -->
+    <div class="our_community article d_flex">
+      <div class="our_community_text t_center">
+        <h1>Hey! Join to our Community</h1>
+        <p>Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vuluptate purus ipsums dolores ficilis uns etra.</p>
+        <button class="btn btn_2">
+          <a href="#">SIGN UP <i class="fa-solid fa-angle-right"></i></a>
+        </button>
+      </div>    
+    </div>
 
   </main>
 </template>
@@ -229,13 +244,6 @@ import MyForumItems from '../components/MyForumItems.vue';
       }
     }
 
-    .article {
-      min-height: 400px;
-      background-size: cover;
-      background-position: center;
-      color: white;
-    }
-
     .featured_article {
       background-image: url('../assets/featured_article_1_bg.jpg');
     }
@@ -245,15 +253,28 @@ import MyForumItems from '../components/MyForumItems.vue';
       width: 70%;
     }
 
-    .our_blog {
+    .black_section {
       background-color: $brand-color-black;
       height: 80px;
       font-weight: bold;
       color: white;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .forum_sections {
+      height: 500px;
+    }
+
+    .our_community {
+      background-image: url('../assets/join_now_cta_bg.jpg');
+      justify-content: center;
+      align-items: center;
+
+      .our_community_text {
+        width: 30%;
+      }
     }
     
   }
-
-  
-
 </style>

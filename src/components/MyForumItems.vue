@@ -3,7 +3,7 @@
     <div class="item d_flex" v-for="(item, index) in shareData" :key="index">
         <a :href="item.link">
             <i class="item_icon fa-2x" :class="item.icon"></i>
-            <p>{{item.title}}</p>  
+            <p class="item_text">{{item.title}}</p>  
         </a>  
     </div>
   </div>
@@ -27,16 +27,23 @@
         .item {
             width: calc(100% / 4 - 40px);
             height: 180px;
-            border: 1px solid black;
+            border-top: 2px solid $brand-color-blue;
             margin: 10px 20px;
             justify-content: center;
             align-items: center;
+            background-color: white;
 
             .item_icon {
                 display: inline-block;
-                background-color: $brand-color-orange;
+                background-color: #fc8c5e;
                 border-radius: 50%;
-                padding: 23px 25px;
+                color: white;
+                line-height: 65px;
+                width: 70px;
+            }
+
+            .item_text {
+                font-weight: bold;
             }
         }  
     }

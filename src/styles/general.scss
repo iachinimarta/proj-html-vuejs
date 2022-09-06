@@ -45,6 +45,8 @@ a {
     padding: 6px 0;
     font-weight: bold;
     color: white;
+    border-radius: 3px;
+    padding: 10px 20px;
 }
 
 .btn_1 {
@@ -53,6 +55,7 @@ a {
 
 .btn_2 {
     background-color: $brand-color-blue;
+    border: none;
 }
 
 i {
@@ -74,4 +77,11 @@ hr {
     background-color: $brand-color-orange;
     border: none;
     border-radius: 1px;
+}
+
+.article {
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
