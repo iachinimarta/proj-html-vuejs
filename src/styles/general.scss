@@ -85,3 +85,18 @@ hr {
     background-position: center;
     color: white;
 }
+
+.black_section {
+    background-color: $brand-color-black;
+    height: 100px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.beige_section {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}

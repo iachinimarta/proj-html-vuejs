@@ -14,8 +14,8 @@
     </div>
 
     <!-- SEZIONE PLACE TO BE -->
-    <div class="bg_beige t_center">
-      <div class="place_to_be_text w_80">
+    <div class="bg_beige beige_section d_flex">
+      <div class="place_to_be_text w_80 t_center">
         <h5>AVADA FORUM IS THE PLACE TO BE</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam debitis hic. Cumque facere sed veritatis ea inventore, et minima eum neque atque repellendus asperiores voluptatibus corrupti aut dolor quisquam sint, nihil deleniti delectus maiores magnam qui perferendis voluptate quaerat eos. Aspernatur ipsam rerum possimus eligendi tempore ducimus rem explicabo.</p>  
       </div>
@@ -99,6 +99,15 @@
           <a href="#">SIGN UP <i class="fa-solid fa-angle-right"></i></a>
         </button>
       </div>    
+    </div>
+
+    <!-- SEZIONE SUBSCRIBE -->
+    <div class="bg_beige beige_section d_flex">
+      <div class="t_center w_80">
+        <h3>Subscribe to our Newsletter</h3>
+        <input type="email" placeholder="Insert your email*" class="subscribe_input">
+        <button class="btn btn_1">SEND</button>
+      </div>
     </div>
 
   </main>
@@ -253,15 +262,6 @@ import MyForumItems from '../components/MyForumItems.vue';
       width: 70%;
     }
 
-    .black_section {
-      background-color: $brand-color-black;
-      height: 80px;
-      font-weight: bold;
-      color: white;
-      align-items: center;
-      justify-content: center;
-    }
-
     .forum_sections {
       height: 500px;
     }
@@ -274,6 +274,15 @@ import MyForumItems from '../components/MyForumItems.vue';
       .our_community_text {
         width: 30%;
       }
+    }
+
+    .subscribe_input {
+        display: inline-block;
+        border: 1px solid lightgray;
+        width: 300px;
+        height: 39px;
+        margin-right: 25px;
+
     }
     
   }
