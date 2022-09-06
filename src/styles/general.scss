@@ -6,6 +6,7 @@
 $brand-color-blue: #6FC2D2;
 $brand-color-black: black;
 $brand-color-beige: rgb(247, 247, 237);
+$brand-color-orange: #fc8c5e;
 
 * {
     margin: 0;
@@ -41,7 +42,6 @@ a {
 }
 
 .btn {
-    height: 100%;
     padding: 6px 0;
     font-weight: bold;
     color: white;
@@ -65,4 +65,13 @@ i {
 
 .bg_beige {
     background-color: $brand-color-beige;
+}
+
+hr {
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+    background-color: $brand-color-orange;
+    border: none;
+    border-radius: 1px;
 }

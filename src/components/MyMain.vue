@@ -23,34 +23,33 @@
 
     <!-- SEZIONE ALL THE LATEST NEWS -->
 
-    <div>
-      <div class="t_center w_80">
-        <h5>PHASELLUS EGET METUS</h5>
-        <h2>All the latest news</h2>
-      </div>
+    <div class="t_center">
+      <h5>PHASELLUS EGET METUS</h5>
+      <h2>All the latest news</h2>
+      
+      <hr>
     </div>
 
-    <hr>
-  
-      <div class="w_80 ">
+    <div class="w_80 ">
 
-        <!-- 3 IMGS -->
-        <MyNewsItems :shareData="newsData_1"/>
+      <!-- 3 IMGS -->
+      <MyNewsItems :shareData="newsData_1"/>
 
-        <!-- SEZIONE FEATURED ARTICLES -->
-        <div class="article featured_article">
-          <h5>FEATURED ARTICLE</h5>
-          <h1>Cras malesuada et orci eget pharetra</h1>
-          <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
-          <button class="btn btn_1">
-            <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
-          </button>
-        </div>
+      <!-- SEZIONE FEATURED ARTICLES -->
+      <div class="article featured_article">
+        <h5>FEATURED ARTICLE</h5>
+        <h1>Cras malesuada et orci eget pharetra</h1>
+        <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
+        <button class="btn btn_1">
+          <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
+        </button>
+      </div>
 
-        <!-- 3 IMGS -->
-        <MyNewsItems :shareData="newsData_2"/>
+      <!-- 3 IMGS -->
+      <MyNewsItems :shareData="newsData_2"/>
 
-        <!-- SEZIONE REVIEWED PRODUCT -->
+      <!-- SEZIONE REVIEWED PRODUCT -->
+      <div class="sided_section d_flex">
         <div class="article reviewd_product">
           <h5>FEATURED ARTICLE</h5>
           <h1>Cras malesuada et orci eget pharetra</h1>
@@ -59,18 +58,46 @@
             <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
           </button>
         </div>
+        
+        <!-- SEZIONE TUTORIALS & GUIDES -->
+        <div class="tutorials">
+          <h4>Tutorials &amp; Guides</h4>
+          <hr>
+
+        </div>
       </div>
+    </div>
+
+    <!-- SEZIONE READ OUR BLOG -->
+    <div class="our_blog t_center">
+      <a href="#">READ OUR BLOG <i class="fa-solid fa-right-long"></i></a>
+    </div>
+
+    <!-- SEZIONE FORUM SECTIONS -->
+    <div class="bg_beige">
+      <div class="t_center">
+        <h5>PHASELLUS EGET METUS</h5>
+        <h2>Forum Sections</h2>
+        
+        <hr>
+
+        <MyForumItems :shareData="forumSections"/>
+      </div>
+    </div>
+    
 
   </main>
 </template>
 
 <script>
 import MyNewsItems from '../components/MyNewsItems.vue';
+import MyForumItems from '../components/MyForumItems.vue';
 
   export default {
       name: 'MyMain',
       components: {
         MyNewsItems,
+        MyForumItems
       },
       data() {
         return {
@@ -132,6 +159,48 @@ import MyNewsItems from '../components/MyNewsItems.vue';
               p: 'Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl'
             },
           ],
+          forumSections: [
+            {
+              title: 'News & Community',
+              link: '#',
+              icon: 'fa-solid fa-file-lines'
+            },
+            {
+              title: 'Apple Forum',
+              link: '#',
+              icon: 'fa-brands fa-apple'
+            },
+            {
+              title: 'Microsoft Forum',
+              link: '#',
+              icon: 'fa-brands fa-windows'
+            },
+            {
+              title: 'Android Forum',
+              link: '#',
+              icon: 'fa-brands fa-android'
+            },
+            {
+              title: 'General Discussion',
+              link: '#',
+              icon: 'fa-solid fa-mug-saucer'
+            },
+            {
+              title: 'Apps & Software',
+              link: '#',
+              icon: 'fa-solid fa-cubes'
+            },
+            {
+              title: 'Gadgets & Stuff',
+              link: '#',
+              icon: 'fa-solid fa-laptop'
+            },
+            {
+              title: 'Tutorials & Guides',
+              link: '#',
+              icon: 'fa-solid fa-wrench'
+            }
+          ]
         }
       }
   }
@@ -173,6 +242,14 @@ import MyNewsItems from '../components/MyNewsItems.vue';
 
     .reviewd_product {
       background-image: url('../assets/featured_article_2_bg.jpg');
+      width: 70%;
+    }
+
+    .our_blog {
+      background-color: $brand-color-black;
+      height: 80px;
+      font-weight: bold;
+      color: white;
     }
     
   }
