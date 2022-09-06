@@ -2,7 +2,6 @@
   <main>
 
     <!-- JUMBOTRON -->
-
     <div class="jumbotron d_flex">
       <div class="jumbotron_text">
         <h1>Tech Forum!</h1>
@@ -22,7 +21,6 @@
     </div>
 
     <!-- SEZIONE ALL THE LATEST NEWS -->
-
     <div class="t_center mt_20">
       <h5 class="mb_20">PHASELLUS EGET METUS</h5>
       <h2 class="mb_20">All the latest news</h2>
@@ -61,8 +59,7 @@
             <button class="btn btn_1">
               <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
             </button>
-          </div>
-          
+          </div>      
         </div>
         
         <!-- SEZIONE TUTORIALS & GUIDES -->
@@ -78,7 +75,7 @@
 
     <!-- SEZIONE READ OUR BLOG -->
     <div class="black_section d_flex">
-      <a href="#">READ OUR BLOG <i class="fa-solid fa-right-long"></i></a>
+      <a href="#">READ OUR BLOG <i class="fa-solid fa-right-long ml_10"></i></a>
     </div>
 
     <!-- SEZIONE FORUM SECTIONS -->
@@ -95,7 +92,7 @@
 
     <!-- SEZIONE OUR FORUM -->
     <div class="black_section d_flex">
-      <a href="#">GO TO OUR FORUM <i class="fa-solid fa-right-long"></i></a>
+      <a href="#">GO TO OUR FORUM <i class="fa-solid fa-right-long ml_10"></i></a>
     </div>
 
     <!-- SEZIONE JOIN OUR COMMUNITY -->
@@ -113,11 +110,12 @@
     <div class="bg_beige beige_section d_flex">
       <div class="t_center w_80">
         <h3 class="mb_20">Subscribe to our Newsletter</h3>
-        <input type="email" placeholder="Insert your email*" class="subscribe_input">
-        <button class="btn btn_1">SEND</button>
+        <input type="email" placeholder="Insert your email*" class="subscribe_input" required>
+        <button class="btn btn_1">
+          <a href="#">SEND</a>
+        </button>
       </div>
     </div>
-
   </main>
 </template>
 
@@ -323,9 +321,8 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
         display: inline-block;
         border: 1px solid lightgray;
         width: 300px;
-        height: 39px;
+        height: 30px;
         margin-right: 25px;
-
     }
     
   }

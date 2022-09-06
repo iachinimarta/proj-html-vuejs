@@ -65,7 +65,7 @@
 </script>
 
 <style lang="scss">
-  @import '@/styles/general.scss';
+@import '@/styles/general.scss';
 
   header {
     width: 100%;
