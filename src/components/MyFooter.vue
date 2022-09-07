@@ -5,7 +5,9 @@
         <h4 class="mb_20">AVADA TECH FORUM</h4>
         <p>Sed sempre, nisl id feugiat eleifend, erat est digssim felis, quis auctor elit enim nec ante. Cras et nibh risus. Pellentesque non mi sit amet mi intermentum.</p>
       </div>
-      <MyFooterLinks :shareData="topics"/>
+      <MyLink :array="popular"/>
+      <MyLink :array="recent"/>
+      <MyLink :array="latest"/>
     </div>
 
     <div class="copyright">
@@ -27,39 +29,37 @@
 </template>
 
 <script>
-import MyFooterLinks from '../components/MyFooterLinks.vue';
+import MyLink from '../components/MyLink.vue';
 
     export default {
         name: 'MyFooter',
         components: {
-          MyFooterLinks
+          MyLink
         }, 
         data() {
-          return {
-            topics: [{                
-              popular: 
-              {
+          return {               
+            popular: 
+              [{
                 title: 'POPULAR TOPICS',
                 link: '#',
                 text: 'Nam a dolor volutpat massa auctor semper',
                 icon: 'fa-solid fa-angle-right'
-              },
-              recent: {
-                title: 'RECENT TOPICS',
-                link: '#',
-                text: 'Sed euismod nunc urna fermentum arcu dapibus fringilla',
-                icon: 'fa-solid fa-angle-right'
-              },
-              latest: {
-                title: 'LATEST REPLIES',
-                link: '#',
-                text: 'Cras lacinia tellsus id mauris finibus lacus molestie',
-                icon: 'fa-solid fa-angle-right'
-              },
-            }]          
-          }
+            }],
+            recent: [{
+              title: 'RECENT TOPICS',
+              link: '#',
+              text: 'Sed euismod nunc urna fermentum arcu dapibus fringilla',
+              icon: 'fa-solid fa-angle-right'
+            }],
+            latest: [{
+              title: 'LATEST REPLIES',
+              link: '#',
+              text: 'Cras lacinia tellsus id mauris finibus lacus molestie',
+              icon: 'fa-solid fa-angle-right'
+            }]
+          }        
         }
-    }
+      }
 </script>
 
 <style lang="scss">
@@ -78,49 +78,46 @@ import MyFooterLinks from '../components/MyFooterLinks.vue';
     }
 
     .copyright {
-        border-top: 1px solid lightgray;
+      border-top: 1px solid lightgray;
 
-        .footer_bottom {
-          justify-content: space-between;
+      .footer_bottom {
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+
+        .icon_container {
+          justify-content: center;
           align-items: center;
-          height: 100px;
 
-          .icon_container {
-            justify-content: center;
-            align-items: center;
-
-            a {
-              margin: 0 5px;
-            }
-
-            .fa-brands {
-              border-radius: 50%;
-              color: white;
-              line-height: 30px;
-              width: 30px;
-              text-align: center;
-
-            }
-
-            .fa-facebook-f {
-              background-color: #4562b0;              
-            }
-
-            .fa-twitter {
-              background-color: #74def4;
-            }
-
-            .fa-instagram {
-              background-color: #399bc0;
-            }
-
-            .fa-youtube {
-              background-color: #bf2717;
-            }
+          a {
+            margin: 0 5px;
           }
 
-          
+          .fa-brands {
+            border-radius: 50%;
+            color: white;
+            line-height: 30px;
+            width: 30px;
+            text-align: center;
+          }
+
+          .fa-facebook-f {
+            background-color: #4562b0;              
+          }
+
+          .fa-twitter {
+            background-color: #74def4;
+          }
+
+          .fa-instagram {
+            background-color: #399bc0;
+          }
+
+          .fa-youtube {
+            background-color: #bf2717;
+          }
         }
+      }
     }
   }
 
