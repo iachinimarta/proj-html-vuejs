@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import MyLink from '../components/MyLink.vue';
+import MyLink from './MyLink.vue';
 
     export default {
         name: 'MyFooter',

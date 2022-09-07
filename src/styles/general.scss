@@ -40,7 +40,6 @@ a {
 }
 
 .btn {
-    padding: 6px 0;
     font-weight: bold;
     color: white;
     border-radius: 3px;
@@ -54,10 +53,6 @@ a {
 .btn_2 {
     background-color: $brand-color-blue;
     border: none;
-}
-
-i {
-    cursor: pointer;
 }
 
 .t_center {
@@ -101,6 +96,7 @@ hr {
     height: 200px;
     justify-content: center;
     align-items: center;
+    background-color: $brand-color-beige;
 }
 
 .mb_10 {

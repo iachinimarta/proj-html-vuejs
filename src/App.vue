@@ -8,8 +8,8 @@
 
 <script>
 import MyHeader from './components/MyHeader.vue';
-import MyMain from './components/MyMain.vue';
-import MyFooter from './components/MyFooter.vue';
+import MyMain from './components/Main/MyMain.vue';
+import MyFooter from './components/Footer/MyFooter.vue';
 
 export default {
   name: 'App',

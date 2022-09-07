@@ -13,7 +13,7 @@
     </div>
 
     <!-- SEZIONE PLACE TO BE -->
-    <div class="bg_beige beige_section d_flex">
+    <div class="beige_section d_flex">
       <div class="place_to_be_text w_80 t_center">
         <h5 class="mb_20">AVADA FORUM IS THE PLACE TO BE</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam debitis hic. Cumque facere sed veritatis ea inventore, et minima eum neque atque repellendus asperiores voluptatibus corrupti aut dolor quisquam sint, nihil deleniti delectus maiores magnam qui perferendis voluptate quaerat eos. Aspernatur ipsam rerum possimus eligendi tempore ducimus rem explicabo.</p>  
@@ -107,7 +107,7 @@
     </div>
 
     <!-- SEZIONE SUBSCRIBE -->
-    <div class="bg_beige beige_section d_flex">
+    <div class="beige_section d_flex">
       <div class="t_center w_80">
         <h3 class="mb_20">Subscribe to our Newsletter</h3>
         <input type="email" placeholder="Insert your email*" class="subscribe_input" required>
@@ -120,9 +120,9 @@
 </template>
 
 <script>
-import MyNewsItems from '../components/MyNewsItems.vue';
-import MyForumItems from '../components/MyForumItems.vue';
-import MyTutorialLinks from '../components/MyTutorialLinks.vue';
+import MyNewsItems from '../Main/MyNewsItems.vue';
+import MyForumItems from '../Main/MyForumItems.vue';
+import MyTutorialLinks from '../Main/MyTutorialLinks.vue';
 
   export default {
       name: 'MyMain',
@@ -135,7 +135,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
         return {
           newsData_1: [
                   {
-                    src: require('../assets/post_feat_img_25-700x441.jpg'),
+                    src: require('../../assets/post_feat_img_25-700x441.jpg'),
                     alt: 'smartphone',
                     title: 'Morbi vitae dui euismod vulputate sollicitudin',
                     date: 'October 11th, 2015',
@@ -144,7 +144,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
                     p: 'Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl'
                   },
                   {
-                    src: require('../assets/post_feat_img_24-700x441.jpg'),
+                    src: require('../../assets/post_feat_img_24-700x441.jpg'),
                     alt: 'smartphone',
                     title: 'Vivamus pellenteque, felis quis varius',
                     date: 'October 11th, 2015',
@@ -153,7 +153,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
                     p: 'Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl'
                   },
                   {
-                    src: require('../assets/post_feat_img_23-700x441.jpg'),
+                    src: require('../../assets/post_feat_img_23-700x441.jpg'),
                     alt: 'smartwatch',
                     title: 'Donec ornare pretium eget scelisque justo',
                     date: 'October 11th, 2015',
@@ -164,7 +164,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
           ],
           newsData_2: [
             {
-              src: require('../assets/post_feat_img_22-700x441.jpg'),
+              src: require('../../assets/post_feat_img_22-700x441.jpg'),
               alt: 'tablet',
               title: 'Fusce sollicitudin nunc sed placerat varius',
               date: 'October 11th, 2015',
@@ -173,7 +173,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
               p: 'Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl'
             },
             {
-              src: require('../assets/post_feat_img_21-700x441.jpg'),
+              src: require('../../assets/post_feat_img_21-700x441.jpg'),
               alt: 'camera',
               title: 'Donec facilis sodales leo sit amet laoreet',
               date: 'October 11th, 2015',
@@ -182,7 +182,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
               p: 'Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl'
             },
             {
-              src: require('../assets/post_feat_img_20-700x441.jpg'),
+              src: require('../../assets/post_feat_img_20-700x441.jpg'),
               alt: 'laptop',
               title: 'Proin eu purus sed aru aliquet curabir vens',
               date: 'October 11th, 2015',
@@ -235,7 +235,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
           ],
           tutorialsLinks: [
             {
-              src: require('../assets/post_feat_img_23-177x142.jpg'),
+              src: require('../../assets/post_feat_img_23-177x142.jpg'),
               title: 'Donec ornare pretium eget scelisque justo',
               link: '#',
               date: 'October 11th, 2015',
@@ -243,7 +243,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
               alt: 'smartwatch'
             },
             {
-              src: require('../assets/post_feat_img_22-177x142.jpg'),
+              src: require('../../assets/post_feat_img_22-177x142.jpg'),
               title: 'Fusce sollicitudin nunc sed placerat varius',
               link: '#',
               date: 'October 11th, 2015',
@@ -251,7 +251,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
               alt: 'tablet'
             },
             {
-              src: require('../assets/post_feat_img_20-177x142.jpg'),
+              src: require('../../assets/post_feat_img_20-177x142.jpg'),
               title: 'Proin eu purus sed aru aliquet curabir vens',
               link: '#',
               date: 'October 11th, 2015',
@@ -273,7 +273,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
     
     .jumbotron {
       color: white;
-      background-image: url('../assets/home_slider_bg.jpg');
+      background-image: url('../../assets/home_slider_bg.jpg');
       background-size: cover;
       background-position: center;
       min-height: 550px;
@@ -288,12 +288,12 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
     }
 
     .featured_article {
-      background-image: url('../assets/featured_article_1_bg.jpg');
+      background-image: url('../../assets/featured_article_1_bg.jpg');
       margin: 50px 0;
     }
 
     .reviewd_product {
-      background-image: url('../assets/featured_article_2_bg.jpg');
+      background-image: url('../../assets/featured_article_2_bg.jpg');
       width: 70%;
       margin: 40px 0 80px 0;
     }
@@ -308,7 +308,7 @@ import MyTutorialLinks from '../components/MyTutorialLinks.vue';
     }
 
     .our_community {
-      background-image: url('../assets/join_now_cta_bg.jpg');
+      background-image: url('../../assets/join_now_cta_bg.jpg');
       justify-content: center;
       align-items: center;
 

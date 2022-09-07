@@ -11,7 +11,7 @@
 
         <div class="header_links d_flex">
           <ul class="d_flex">
-            <li v-for="(links, index) in headerLinks" :key="index">
+            <li v-for="(links, index) in headerLinks" :key="index" @click="indexOfCurrentPage(index)" :class="(index == currentPage)?'active':''">
               <a :href="links.link">{{links.name}}</a>
             </li>
           </ul>
@@ -58,8 +58,15 @@
                 name: 'Contact us',
                 link: '#'
               },
-            ]
+            ],
+            currentPage: 0,
           }
+        },
+        methods: {
+          indexOfCurrentPage(index) {
+            this.currentPage = index;
+            console.log(index);
+          },
         }
     }
 </script>
@@ -83,6 +90,11 @@
 
       .header_links {
         align-items: center;
+
+        .active {
+          border-bottom: 2px dotted white;
+          padding-bottom: 1px;
+        }
 
         ul {
           margin-right: 10px;
