@@ -6,7 +6,7 @@
             <a :href="links.link">
                 <h4 class="mb_10">{{links.title}}</h4>
             </a>  
-            <div class="d_flex date">  
+            <div class="d_flex fs_11">  
                 <p>{{links.date}} |</p>
                 <p v-if="links.active == false"> Comments Off</p>                 
             </div>

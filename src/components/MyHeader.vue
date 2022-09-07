@@ -9,14 +9,14 @@
           </a>
         </div>
 
-        <div class="header_links d_flex">
+        <div class="header_links d_flex fs_13">
           <ul class="d_flex">
             <li v-for="(links, index) in headerLinks" :key="index" @click="indexOfCurrentPage(index)" :class="(index == currentPage)?'active':''">
               <a :href="links.link">{{links.name}}</a>
             </li>
           </ul>
 
-          <button class="btn btn_1">
+          <button class="btn btn_1 fs_11">
             <a href="#">JOIN US</a>
           </button>
 

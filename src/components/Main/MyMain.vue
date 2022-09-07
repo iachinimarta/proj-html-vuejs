@@ -21,7 +21,7 @@
     </div>
 
     <!-- SEZIONE ALL THE LATEST NEWS -->
-    <div class="t_center mt_20">
+    <div class="t_center mt_50">
       <h5 class="mb_20">PHASELLUS EGET METUS</h5>
       <h2 class="mb_20">All the latest news</h2>
       
@@ -54,8 +54,8 @@
         <div class="article reviewd_product d_flex">
           <div>
             <h5 class="mb_20">REVIEWED PRODUCT</h5>
-            <h1 class="mb_20">Cras malesuada et orci eget pharetra</h1>
-            <p class="mb_20 fs_14">In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
+            <h1 class="mb_20">Mauris viverra atisan ipsum eget felis prims efficitur varius</h1>
+            <p class="mb_20 fs_14">In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum.</p>
             <button class="btn btn_1">
               <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
             </button>

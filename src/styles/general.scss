@@ -20,7 +20,7 @@ body {
 
 $brand-color-blue: #27aabe;
 $brand-color-black: black;
-$brand-color-beige: rgb(247, 247, 237);
+$brand-color-beige: #eee3d6;
 $brand-color-orange: #fc8c5e;
 
 .bg_brandColor {
@@ -67,7 +67,7 @@ $brand-color-orange: #fc8c5e;
     font-weight: bold;
     color: white;
     border-radius: 3px;
-    padding: 5px 10px;
+    padding: 10px 20px;
 }
 
 .btn_1 {
@@ -93,8 +93,12 @@ $brand-color-orange: #fc8c5e;
     text-align: center;
 }
 
-.date {
+.fs_11 {
     font-size: 11px;
+}
+
+.fs_13 {
+    font-size: 13px;
 }
 
 .fs_14 {

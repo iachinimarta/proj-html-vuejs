@@ -5,7 +5,7 @@
            <img class="news_img" :src="news.src" :alt="news.alt">
             <h4>{{news.title}}</h4> 
         </a> 
-        <span class="date d_flex mb_10">
+        <span class="fs_11 d_flex mb_10">
             <p>{{news.date}} | </p>
             <p v-if="news.active">{{news.comments}}</p>
             <p v-else>Comments Off</p>
