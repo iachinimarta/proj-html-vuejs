@@ -1,11 +1,6 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import '~@fontsource/fira-sans/index.css';
 
-$brand-color-blue: #27aabe;
-$brand-color-black: black;
-$brand-color-beige: rgb(247, 247, 237);
-$brand-color-orange: #fc8c5e;
-
 * {
     margin: 0;
     padding: 0;
@@ -20,28 +15,53 @@ body {
     font-family: "Fira Sans", sans-serif;
 }
 
+// -------------------------------------------------------- COLORI
+
+
+$brand-color-blue: #27aabe;
+$brand-color-black: black;
+$brand-color-beige: rgb(247, 247, 237);
+$brand-color-orange: #fc8c5e;
+
 .bg_brandColor {
     background-color: $brand-color-blue;
 }
 
-li {
-    list-style: none;
-    margin: 0 15px;
+.bg_beige {
+    background-color: $brand-color-beige;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+// -------------------------------------------------------- SPAZIATURE
+
+.mb_10 {
+    margin-bottom: 10px;
 }
 
-.d_flex {
-    display: flex;
+.mb_20 {
+    margin-bottom: 20px;
 }
 
-.w_80 {
-    width: 80%;
-    margin: auto;
+.mt_20 {
+    margin-top: 20px;
 }
+
+.mt_50 {
+    margin-top: 50px;
+}
+
+.m_20 {
+    margin: 20px;
+}
+
+.mr_20 {
+    margin-right: 20px;
+}
+
+.ml_10 {
+    margin-left: 10px;
+}
+
+// -------------------------------------------------------- BUTTONS
 
 .btn {
     font-weight: bold;
@@ -59,12 +79,38 @@ a {
     border: none;
 }
 
+// -------------------------------------------------------- FORMATTAZIONE
+.d_flex {
+    display: flex;
+}
+
+.w_80 {
+    width: 80%;
+    margin: auto;
+}
+
 .t_center {
     text-align: center;
 }
 
-.bg_beige {
-    background-color: $brand-color-beige;
+.date {
+    font-size: 11px;
+}
+
+.fs_14 {
+    font-size: 14px;
+}
+
+// -------------------------------------------------------- ELEMENTI
+
+li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 hr {
@@ -101,40 +147,4 @@ hr {
     justify-content: center;
     align-items: center;
     background-color: $brand-color-beige;
-}
-
-.mb_10 {
-    margin-bottom: 10px;
-}
-
-.mb_20 {
-    margin-bottom: 20px;
-}
-
-.mt_20 {
-    margin-top: 20px;
-}
-
-.mt_50 {
-    margin-top: 50px;
-}
-
-.m_20 {
-    margin: 20px;
-}
-
-.mr_20 {
-    margin-right: 20px;
-}
-
-.ml_10 {
-    margin-left: 10px;
-}
-
-.date {
-    font-size: 11px;
-}
-
-.fs_14 {
-    font-size: 14px;
 }
