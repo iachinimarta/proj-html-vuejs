@@ -1,13 +1,15 @@
 <template>
-  <footer>
+  <footer class="fs_14">
     <div class="d_flex w_80 footer_container">
-      <div class="footer_description">
-        <h4 class="mb_20">AVADA TECH FORUM</h4>
-        <p>Sed sempre, nisl id feugiat eleifend, erat est digssim felis, quis auctor elit enim nec ante. Cras et nibh risus. Pellentesque non mi sit amet mi intermentum.</p>
+      <div class="d_flex">
+        <div class="footer_description">
+          <h4 class="mb_20">AVADA TECH FORUM</h4>
+          <p>Sed sempre, nisl id feugiat eleifend, erat est digssim felis, quis auctor elit enim nec ante. Cras et nibh risus. Pellentesque non mi sit amet mi intermentum.</p>
+        </div>
+        <MyLink :array="popular"/>
+        <MyLink :array="recent"/>
+        <MyLink :array="latest"/>
       </div>
-      <MyLink :array="popular"/>
-      <MyLink :array="recent"/>
-      <MyLink :array="latest"/>
     </div>
 
     <div class="copyright">
@@ -42,20 +44,35 @@ import MyLink from '../components/MyLink.vue';
               [{
                 title: 'POPULAR TOPICS',
                 link: '#',
-                text: 'Nam a dolor volutpat massa auctor semper',
-                icon: 'fa-solid fa-angle-right'
-            }],
+                icon: 'fa-solid fa-angle-right',
+                text: {
+                  a: 'Nam a dolor volutpat massa auctor semper',
+                  b: 'Sed euismod nunc urna fermentum arcu dapibus fringilla',
+                  c: 'Cras lacinia tellsus id mauris finibus lacus molestie',
+                  d: 'Curabitur a scelerisque ligula'
+                }               
+              }],
             recent: [{
               title: 'RECENT TOPICS',
               link: '#',
-              text: 'Sed euismod nunc urna fermentum arcu dapibus fringilla',
-              icon: 'fa-solid fa-angle-right'
+              icon: 'fa-solid fa-angle-right',
+              text: {
+                  a: 'Cras lacinia tellsus id mauris finibus lacus molestie',
+                  b: 'Proin at ligula sagittis vestibulum nisi vitae',
+                  c: 'Sed nec metus at est tincidunt elementum',
+                  d: 'Nulla egestas nulla eu nulla suscipit molestie'
+              }     
             }],
             latest: [{
               title: 'LATEST REPLIES',
               link: '#',
-              text: 'Cras lacinia tellsus id mauris finibus lacus molestie',
-              icon: 'fa-solid fa-angle-right'
+              icon: 'fa-solid fa-angle-right',
+              text: {
+                  a: 'Cras lacinia tellsus id mauris finibus lacus molestie',
+                  b: 'Cras lacinia tellsus id mauris finibus lacus molestie',
+                  c: 'Nulla egestas nulla eu nulla suscipit molestie',
+                  d: 'Mauris ac nibh quis eros sagittis lacinia a et dui'
+              }  
             }]
           }        
         }
@@ -73,7 +90,7 @@ import MyLink from '../components/MyLink.vue';
       height: 100%;
       
       .footer_description {
-        width: 30%;
+        width: 35%;
       }
     }
 

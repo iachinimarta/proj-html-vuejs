@@ -5,7 +5,7 @@
     <div class="jumbotron d_flex">
       <div class="jumbotron_text">
         <h1>Tech Forum!</h1>
-        <p class="mb_20">Discuss all the latest technology news and trends</p>
+        <p class="mb_20 fs_14">Discuss all the latest technology news and trends</p>
         <button class="btn btn_2">
           <a href="#">GET AVADA NOW! <i class="fa-solid fa-angle-right"></i></a>
         </button>
@@ -38,7 +38,7 @@
         <div class="featured_container">
           <h5 class="mb_20">FEATURED ARTICLE</h5>
           <h1 class="mb_20">Cras malesuada et orci eget pharetra</h1>
-          <p class="mb_20">In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
+          <p class="mb_20 fs_14">In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
           <button class="btn btn_1">
             <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
           </button>
@@ -55,7 +55,7 @@
           <div>
             <h5 class="mb_20">REVIEWED PRODUCT</h5>
             <h1 class="mb_20">Cras malesuada et orci eget pharetra</h1>
-            <p class="mb_20">In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
+            <p class="mb_20 fs_14">In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadipis ets ipsums dolores ficilis uns leo lectus.</p>
             <button class="btn btn_1">
               <a href="#">READ MORE <i class="fa-solid fa-angle-right"></i></a>
             </button>
@@ -99,7 +99,7 @@
     <div class="our_community article d_flex">
       <div class="our_community_text t_center">
         <h1 class="mb_20">Hey! Join to our Community</h1>
-        <p class="mb_20">Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vuluptate purus ipsums dolores ficilis uns etra.</p>
+        <p class="mb_20 fs_14">Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vuluptate purus ipsums dolores ficilis uns etra.</p>
         <button class="btn btn_2">
           <a href="#">SIGN UP <i class="fa-solid fa-angle-right"></i></a>
         </button>
