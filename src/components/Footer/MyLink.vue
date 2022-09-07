@@ -26,7 +26,7 @@
     export default {
         name: 'MyLink',
         props: {
-            array: Object
+            array: Array
         },
     }
 </script>

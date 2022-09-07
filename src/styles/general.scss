@@ -12,6 +12,10 @@ $brand-color-orange: #fc8c5e;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Fira Sans", sans-serif;
 }

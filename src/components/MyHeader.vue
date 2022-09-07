@@ -20,7 +20,7 @@
             <a href="#">JOIN US</a>
           </button>
 
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
       </div>    
     </div>
